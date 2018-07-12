@@ -1,0 +1,18 @@
+es:
+  activerecord:
+    models:
+      user: 'Usuario'
+    attributes:
+      user:
+        username: 'Nombre Usuario'
+        email: 'Email'
+        password_confirmation: 'Confirmación de Password'
+        reset_password_token: 'Resetear Password'
+        reset_password_sent_at: 'Password enviado a:'
+        remember_created_at: 'Creado el:'
+        sign_in_count: 'Registrados'
+        current_sign_in_at: 'Usuario Registrado a las:'
+        last_sign_in_at: 'Ultimo Registro:'
+        current_sign_in_ip: 'Ip Registrado'
+        last_sign_in_ip: 'Ultimo Registrado:'
+        remember_me: 'Recordarme'

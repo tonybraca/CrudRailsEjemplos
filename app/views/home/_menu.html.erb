@@ -1,0 +1,22 @@
+    <div style = "background-color: black; color: white;">  
+      <ul class="nav justify-content-end" >
+        <li class="nav-item">
+          <%= link_to t('intranet'), 'http://intranet.corpoelec.com.ve' %>/
+        </li>
+        <li class="nav-item">
+          <%= link_to t('local'), '/' %>/
+        </li>
+        <li class="nav-item">
+          <%= link_to t('Contacto'), '#' %>/
+        </li>
+        <li class="nav-item">(
+          <% if user_signed_in? %>
+            <%= link_to t('deslogear'), destroy_user_session_path, :method => :delete%>
+          <% else %>
+            <%= link_to t('logear'), new_user_session_path, class: "data-toggle='modal' data-target='#exampleModal'" %>
+            /
+            <%= link_to t('Registrar'), new_user_registration_path %>
+          <% end %>)
+        </li>
+      </ul>
+    </div>
